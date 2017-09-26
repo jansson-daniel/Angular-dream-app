@@ -1,0 +1,11 @@
+button {
+    margin: 20px 0;
+}
+
+input[type="text"] {
+    width: 300px;
+}
+
+.wrapper {
+    margin-top: 50px;
+}
