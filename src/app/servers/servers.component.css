@@ -9,3 +9,11 @@ input[type="text"] {
 .wrapper {
     margin-top: 50px;
 }
+
+.details {
+    display: none;
+}
+
+.isVisible {
+    display: block;
+}

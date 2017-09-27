@@ -13,6 +13,7 @@ export class ServersComponent implements OnInit {
   serverCreationStatus = 'No server was created';
   serverName = 'Default value';
   servers = ['Testserver', 'Testserver 2'];
+  showDetails = false;
 
   constructor () {
     setTimeout(() => {
@@ -31,6 +32,10 @@ export class ServersComponent implements OnInit {
 
   onUpdateServerName (event: Event) {
     this.serverName = (<HTMLInputElement> event.target).value;
+  }
+
+  onToggleDetails (event) {
+    this.showDetails = !this.showDetails;
   }
 
 }

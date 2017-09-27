@@ -14,6 +14,17 @@
     Add Server
 </button>
 
+<button
+   (click) = onToggleDetails($event)
+   class="btn btn-primary">
+    Display details
+</button>
+<p
+   class="details"
+   [ngClass]="{ isVisible: showDetails }">
+   This is a hidden paragraph which can be toggled!
+</p>
+
 <app-server *ngFor='let server of servers'></app-server>
 
 <!--label>{{ serverName }}</label-->
